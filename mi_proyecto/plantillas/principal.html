@@ -1,0 +1,31 @@
+{% extends 'base/plantilla_base.html' %}
+{% block contenido %}
+    <main class="container">
+        <section class="row">
+            <div class="col">
+                <h1 class="text-center">Libros</h1>
+            </div>
+        </section>
+        <section class="row">
+            {% for producto in tiendita %}
+                <div class="col-4" id="{{ producto.id }}">
+                    <article class="card">
+                        <img src="{{ producto.imagen}}" class="card-img-top">
+                        <section class="card-content">
+                            <h2 class="card-title">
+                             {{ producto.nombre }}   
+                            </h2>
+                            <p class="card-text">
+                                {{ producto.autor }}
+                            </p>
+                            <div class="card-text">
+                                {{ producto.precio }}
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                {% endfor %}
+        </section>
+    </main>
+    
+{% endblock contenido %}

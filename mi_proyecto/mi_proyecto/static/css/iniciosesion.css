@@ -1,0 +1,19 @@
+button{
+    margin: auto;
+    border: 1px ;
+    display:block;
+}
+
+.form-control{
+    border: 1px solid black;
+    border-radius: 5px;    border: 1px solid black;
+    border-radius: 5px shadow;
+}
+
+form{
+    width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+  }
